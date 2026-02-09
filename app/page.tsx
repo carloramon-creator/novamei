@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { CheckCircle2, MessageCircle, MapPin, Mail, Check, ShieldCheck, Clock } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,12 +10,9 @@ export default function Home() {
       <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            {/* Placeholder Logo if image not found, else use Image component */}
-            <div className="text-2xl font-black text-blue-800 tracking-tighter">
-              <span className="text-blue-900">M</span>nova<span className="text-orange-500">mei</span>
-            </div>
+            <Image src="/logo-novamei.jpg" alt="NovaMei" width={140} height={40} className="h-10 w-auto" priority />
           </div>
-          <Link href="https://wa.me/5548999999999" target="_blank">
+          <Link href="https://wa.me/5548984051237" target="_blank">
             <Button className="bg-green-600 hover:bg-green-700 text-white font-bold gap-2">
               <MessageCircle size={18} />
               <span className="hidden sm:inline">Falar no WhatsApp</span>
@@ -50,7 +48,7 @@ export default function Home() {
               </div>
             </div>
             <div className="pt-4">
-              <Link href="https://wa.me/5548999999999" target="_blank">
+              <Link href="https://wa.me/5548984051237" target="_blank">
                 <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-8 h-14 shadow-lg shadow-green-900/20">
                   <MessageCircle className="mr-2" /> Falar com um contador agora
                 </Button>
@@ -178,7 +176,7 @@ export default function Home() {
               <p className="text-blue-200 italic border-l-4 border-orange-500 pl-4 py-2">
                 &quot;Aqui você fala com gente de verdade, que entende a realidade do microempreendedor.&quot;
               </p>
-              <Link href="https://wa.me/5548999999999" target="_blank">
+              <Link href="https://wa.me/5548984051237" target="_blank">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white mt-4">
                   Conhecer Planos
                 </Button>
@@ -215,9 +213,7 @@ export default function Home() {
       <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
         <div className="container mx-auto px-4 grid md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-black text-white tracking-tighter mb-4">
-              <span className="text-blue-600">M</span>nova<span className="text-orange-500">mei</span>
-            </div>
+            <Image src="/logo-novamei.jpg" alt="NovaMei" width={140} height={40} className="h-10 w-auto mb-4" />
             <p className="max-w-xs text-sm">
               Contabilidade especializada para MEI. Simplificamos sua vida para você focar no crescimento do seu negócio.
             </p>
