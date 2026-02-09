@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { CheckCircle2, MessageCircle, MapPin, Mail, Phone, ArrowRight, ShieldCheck, Clock, Check } from 'lucide-react'
+import { CheckCircle2, MessageCircle, MapPin, Mail, Check, ShieldCheck, Clock } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -176,7 +176,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-blue-200 italic border-l-4 border-orange-500 pl-4 py-2">
-                "Aqui você fala com gente de verdade, que entende a realidade do microempreendedor."
+                &quot;Aqui você fala com gente de verdade, que entende a realidade do microempreendedor.&quot;
               </p>
               <Link href="https://wa.me/5548999999999" target="_blank">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white mt-4">
