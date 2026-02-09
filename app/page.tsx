@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <header className="fixed top-0 w-full z-50 bg-white border-b border-slate-200 shadow-sm">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/logo-novamei.jpg" alt="NovaMei" width={140} height={40} className="h-10 w-auto" priority />
+            <Image src="/logo-novamei.jpg" alt="NovaMei" width={200} height={60} className="h-14 w-auto" priority />
           </div>
           <Link href="https://wa.me/5548984051237" target="_blank">
             <Button className="bg-green-600 hover:bg-green-700 text-white font-bold gap-2">
@@ -22,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 text-white">
+      <section className="pt-36 pb-20 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 text-white">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 space-y-8">
             <h1 className="text-4xl md:text-6xl font-black leading-tight">
